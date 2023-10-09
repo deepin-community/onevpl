@@ -2,3 +2,15 @@
 
 %:
 	dh $@
+
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-DVPL_INSTALL_ENVDIR=/usr/share/vpl/env \
+		-DVPL_INSTALL_MODFILEDIR=/usr/share/vpl/modulefiles\
+		-DINSTALL_EXAMPLE_CODE=OFF
+
+override_dh_auto_install:
+	dh_auto_install
+	rm -rf debian/tmp/usr/share/vpl/licensing/license.txt \
+		debian/tmp/usr/share/vpl/licensing/third-party-programs.txt \
