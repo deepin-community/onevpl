@@ -1,0 +1,7 @@
+usr/include
+usr/lib/*/cmake
+usr/lib/*/libvpl.so
+usr/lib/*/pkgconfig/vpl.pc
+usr/share/vpl/env
+usr/share/vpl/licensing
+usr/share/vpl/modulefiles

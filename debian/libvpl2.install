@@ -1,0 +1,2 @@
+usr/lib/*/libvpl.so.*
+usr/lib/*/vpl/libvpl_wayland.so
